@@ -19,8 +19,14 @@ class Book(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=200, help_text="Enter the Book Category")
+    category_name = models.CharField(max_length=200, help_text="Enter the Book Category")
+    url = models.URLField(unique = True)
 
-    # class Meta:
-    #     verbose_name_plural = "categories"
-    #     return self.name
+    class Meta:
+        verbose_name_plural = "categories"
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.category_name
+
+            
