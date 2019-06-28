@@ -2,12 +2,12 @@
 
 {% block content %}
   <h1>Free Shelf Home</h1>
-  <p>Welcome to Free Shelf a Resource for Free Online Programming Books</p>
+  <p>Welcome to Free Shelf, a Resource for Free Online Programming Books</p>
   <h2>Dynamic content</h2>
   <p>Check Out These Books!</p>
   <ul>
-    <li><strong>Books:</strong> {{ num_books }}</li>
-    <li><strong>Copies:</strong> {{ num_instances }}</li>
-    <li><strong>Authors:</strong> {{ num_authors }}</li>
+        {% for book in books %}
+        <li>{{ book }}</li>
+        {% endfor %}
   </ul>
 {% endblock %}
