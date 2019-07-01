@@ -1,5 +1,19 @@
 .sidebar-nav {
     margin-top: 20px;
-    padding: 0;
+    padding: 20px;
     list-style: none;
+}
+
+.booklist {
+    list-style-type: none;
+    padding: 20px left;
+}
+
+.header {
+    background-color: aquamarine;
+    padding: 20px left;
+    float: right;
+}
+.header_image {
+    width: 20%;
 }

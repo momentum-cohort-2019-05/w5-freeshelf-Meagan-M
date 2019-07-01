@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Free Shelf Home</h1>
+<header class="header">
+    <img class= "header_image" src="../static/images/codebooks.jpg">
+  <h1>Free Shelf</h1>
   <p>Welcome to Free Shelf, a Resource for Free Online Programming Books</p>
-  <h2>Dynamic content</h2> 
-  <p>Check Out These Books!</p>
-  <ul>
+</header>
+  <h2>Check Out These Books!</h2> 
+  <ul class='booklist'>
         {% for book in books %}
         <li>{{ book }}</li>
         {% endfor %}
   </ul>
 {% endblock %}
-
